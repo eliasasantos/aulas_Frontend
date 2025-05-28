@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Completo com Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-indigo-600 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+      <span class="font-bold text-lg">Exemplo Tailwind</span>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Início</a>
+        <a href="#" class="hover:underline">Sobre</a>
+        <a href="#" class="hover:underline">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container mx-auto p-4">
+    
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://via.placeholder.com/300" class="w-full mb-2 rounded" alt="Imagem">
+        <h2 class="text-xl font-bold mb-1">Título do Card</h2>
+        <p>Texto de exemplo no card.</p>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Saiba mais</button>
+      </div>
+
+      <div class="bg-green-100 border-l-4 border-green-500 p-4 rounded">
+        <h2 class="font-bold text-green-700">Outro Card</h2>
+        <p>Card com fundo diferenciado.</p>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <form class="bg-white p-6 rounded shadow mb-4">
+      <h3 class="text-2xl font-semibold mb-4">Formulário de Contato</h3>
+      <div class="mb-3">
+        <label class="block font-semibold">Nome</label>
+        <input type="text" class="w-full p-2 border rounded" />
+      </div>
+      <div class="mb-3">
+        <label class="block font-semibold">Email</label>
+        <input type="email" class="w-full p-2 border rounded" />
+      </div>
+      <div class="mb-3">
+        <label class="block font-semibold">Mensagem</label>
+        <textarea class="w-full p-2 border rounded" rows="4"></textarea>
+      </div>
+      <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar</button>
+    </form>
+
+    <!-- Tabela -->
+    <h3 class="text-xl font-semibold mb-2">Tabela de Usuários</h3>
+    <table class="min-w-full border bg-white rounded shadow">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="p-2 border">#</th>
+          <th class="p-2 border">Nome</th>
+          <th class="p-2 border">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-2 border">1</td>
+          <td class="p-2 border">Maria</td>
+          <td class="p-2 border">maria@email.com</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="p-2 border">2</td>
+          <td class="p-2 border">João</td>
+          <td class="p-2 border">joao@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Alerta -->
+    <div class="mt-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded">
+      <p><strong>Atenção:</strong> Este é um alerta de aviso!</p>
+    </div>
+
+  </div>
+</body>
+</html>
