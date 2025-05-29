@@ -3,4 +3,5 @@ function soma(){
   var b = document.getElementById('valor02').value;
   document.getElementById('demo').innerHTML = a + b;
   //document.getElementById('demo').innerHTML = parseInt(a) + parseInt(b);
+  document.getElementById('demo').innerHTML = parseInt(a) + parseInt(b);
 }
